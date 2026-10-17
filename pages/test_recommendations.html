@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Recommendations</title>
+</head>
+<body>
+    <h1>Test Direct des Recommandations</h1>
+    <button onclick="testPHP()">Test PHP Endpoint</button>
+    <button onclick="testPython()">Test Python API</button>
+    <div id="result"></div>
+
+    <script>
+        async function testPHP() {
+            try {
+                const response = await fetch('get_recommendations.php');
+                const data = await response.json();
+                document.getElementById('result').innerHTML = 
+                    '<h3>PHP Response:</h3><pre>' + JSON.stringify(data, null, 2) + '</pre>';
+            } catch (error) {
+                document.getElementById('result').innerHTML = 'PHP Error: ' + error;
+            }
+        }
+
+        async function testPython() {
+            try {
+                const response = await fetch('http://127.0.0.1:5000/recommend?user_id=1');
+                const data = await response.json();
+                document.getElementById('result').innerHTML = 
+                    '<h3>Python API Response:</h3><pre>' + JSON.stringify(data, null, 2) + '</pre>';
+            } catch (error) {
+                document.getElementById('result').innerHTML = 'Python API Error: ' + error;
+            }
+        }
+    </script>
+</body>
+</html>

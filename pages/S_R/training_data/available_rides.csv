@@ -1,0 +1,11 @@
+ride_id,depart,arrive,price,date_trajet,heure_depart,day_of_week,hour_of_day,available_seats,driver_id
+75,Casablanca,Marrakech,10.0,2025-12-12,0 days 12:30:00,6,12,8,19
+76,Rabat,Marrakech,12.0,2025-12-12,0 days 12:45:00,6,12,7,20
+77,Errachidia,Ouarzazate,19.0,2025-12-12,0 days 12:45:00,6,12,8,21
+78,Errachidia,Ouarzazate,12.0,2025-12-12,0 days 12:45:00,6,12,3,19
+79,Errachidia,Casablanca,250.0,2025-11-21,0 days 12:33:00,6,12,6,19
+80,Errachidia,Ouarzazate,113.0,2025-12-12,0 days 12:30:00,6,12,7,28
+81,Errachidia,Ouarzazate,133.0,2025-12-12,0 days 12:45:00,6,12,7,29
+82,Errachidia,Casablanca,14.0,2025-12-04,0 days 12:45:00,5,12,9,30
+83,Errachidia,Casablanca,12.0,2025-12-12,0 days 12:45:00,6,12,2,30
+84,Errachidia,Ouarzazate,12.0,2025-12-12,0 days 12:33:00,6,12,5,32

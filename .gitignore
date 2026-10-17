@@ -1,0 +1,14 @@
+# Ignore Composer dependencies
+/vendor/
+
+# Ignore VS Code settings
+/.vscode/
+
+# Ignore environment & secret files
+.env
+.env.local
+config.php
+
+# Ignore logs & databases exports if personal
+*.log
+*.sql

@@ -1,0 +1,82 @@
+MYPROJET/
+│
+├── admin/                           # Interface d'administration
+│   └── includes/
+│       ├── admin_login.php
+│       ├── contact.php
+│       ├── dashboard.php
+│       ├── delete_reservation.php
+│       ├── delete_trajet.php
+│       ├── delete_user.php
+│       ├── edit_reservation.php
+│       ├── edit_trajet.php
+│       ├── edit_user.php
+│       ├── login.php
+│       ├── logout.php
+│       ├── manage_contacts.php
+│       ├── manage_reservations.php
+│       ├── manage_trajets.php
+│       ├── manage_users.php
+│       ├── test_db.php
+│       └── update_status.php
+│
+├── forUs/                          # Dossier "À propos de nous"
+│
+├── libs/                           # Bibliothèques externes
+│   └── tcpdf/                      # Bibliothèque TCPDF pour génération PDF
+│
+│
+├── css/                            # Feuilles de style
+│
+├── images/                         # Images et ressources visuelles
+│
+├── js/                             # Scripts JavaScript
+│
+│
+├── pages/                          # Pages principales du site , start with index.php avant de user cree compte
+│ 
+│    └──── trips/                          # Gestion des trajets (après inscription)
+│    │  ├── api/                        # API pour les trajets
+│    │  ├── Accueil.php
+│    │  ├── add.php
+│    │  ├── annuler_reservation_admin.php
+│    │  ├── annuler_reservation.php
+│    │  ├── confirmation.php
+│    │  ├── confirmation1.php
+│    │  ├── contact.php
+│    │  ├── creer_trajet.php
+│    │  ├── deconnexion.php
+│    │  ├── edit_profile.php
+│    │  ├── generate_pdf.php
+│    │  ├── list.php
+│    │  ├── logout_confirm.php
+│    │  ├── mes_reservations.php
+│    │  └── mes_trajets_conducteur.php
+│    │
+│    │
+│    └──── S_R/                            # Dossier système/réservations 
+│      ├──  data_extractor.py
+│      ├── recommendation_api.py
+│      ├── recommendation_model.py 
+│      └── training_data/                 # Données d'entraînement pour le système de recommandation
+│        ├── available_rides.csv
+│        ├── data_summary.json
+│        ├── user_profiles.csv
+│        └── user_ride_interactions.csv
+│
+│
+│   └── Fichiers racine :
+    ├── bocc.php
+    ├── contact.php
+    ├── footer.php
+    ├── forgetpassword.php
+    ├── get_recommendations.php
+    ├── index.php //same accueil en trips/
+    ├── inscription.php
+    ├── inscription1.php
+    ├── login.php
+    ├── reset_password.php
+    ├── sendgrid_config.php
+    └── service.php
+│
+├── vendor/  

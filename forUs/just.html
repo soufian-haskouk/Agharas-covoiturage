@@ -1,0 +1,127 @@
+<?php if (isset($_SESSION['est_conducteur']) && $_SESSION['est_conducteur']): ?>
+<a href="mes_trajets_conducteur.php" class="driver-icon">
+    <i class="fa fa-car"></i>
+    Mes Trajets
+</a>
+<?php endif; ?> 
+
+
+<?php include('../templates/header.php'); ?>	
+
+<?php
+include('../../templates/header.php');
+
+<?php
+// Load SendGrid configuration
+require __DIR__ . '/sendgrid_config.php';
+
+// Configuration
+$test_email = "your_real_email@example.com"; // ← CHANGE TO YOUR ACTUAL EMAIL
+$test_link = "http://localhost/myProjet/pages/reset_password.php?token=TEST123";
+
+// Send test email
+echo "<h2>Testing Email System</h2>";
+echo "<p>Sending test email to: $test_email</p>";
+
+if (sendResetEmail($test_email, $test_link)) {
+    echo '<div style="color:green;">✓ Email sent successfully!</div>';
+    echo '<p>Check your:';
+    echo '<ul>';
+    echo '<li>Inbox</li>';
+    echo '<li>Spam folder</li>';
+    echo '</ul>';
+    echo 'Email should arrive within 1-5 minutes.</p>';
+} else {
+    echo '<div style="color:red;">✗ Failed to send test email</div>';
+    echo '<h3>Common fixes:</h3>';
+    echo '<ol>';
+    echo '<li>Verify SendGrid API key in sendgrid_config.php</li>';
+    echo '<li>Check PHP error logs</li>';
+    echo '<li>Test internet connection</li>';
+    echo '</ol>';
+}
+?>
+
+
+
+#2c3e50  
+<style>
+    .containerr {
+      max-width: 600px;
+      margin: 60px auto;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    
+    }
+    
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 28px;
+      color: #222;
+    }
+    
+    .trip-info {
+        
+      max-width: 600px;
+      margin: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    
+      border: 1px solid #ddd;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      background-color: #fafafa;
+    }
+    
+    .trip-info p {
+      margin: 8px 0;
+      font-size: 16px;
+      color: #333;
+    }
+    
+    .form-group {
+      margin-bottom: 1px;
+      text-align: left;
+      padding: 10px;
+      
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #444;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="number"] {
+      width: 100%;
+      padding: 8px 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-sizing: border-box;
+    }
+    
+    .btnn {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #3498db;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 10px;
+      
+    }
+    
+    .btnn:hover {
+      background-color:#ffc107;
+    }
+    </style>
+    
+    
+    
+    

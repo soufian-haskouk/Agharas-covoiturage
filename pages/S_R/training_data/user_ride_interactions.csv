@@ -1,0 +1,13 @@
+user_id,ride_id,interaction_strength,depart,arrive,price,day_of_week,hour_of_day,user_activity_level,rating
+28,71,1,Errachidia,Marrakech,23.0,4,21,4,4
+28,77,1,Errachidia,Ouarzazate,19.0,6,12,4,4
+1,83,1,Errachidia,Casablanca,12.0,6,12,5,5
+32,81,1,Errachidia,Ouarzazate,133.0,6,12,1,5
+1,71,1,Errachidia,Marrakech,23.0,4,21,5,0
+1,71,1,Errachidia,Marrakech,23.0,4,21,5,0
+1,71,1,Errachidia,Marrakech,23.0,4,21,5,0
+1,71,1,Errachidia,Marrakech,23.0,4,21,5,0
+20,72,1,Errachidia,Marrakech,12.0,4,12,2,0
+20,72,1,Errachidia,Marrakech,12.0,4,12,2,0
+28,71,1,Errachidia,Marrakech,23.0,4,21,4,0
+28,78,1,Errachidia,Ouarzazate,12.0,6,12,4,0

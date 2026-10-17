@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Engineering Student Profile</title>
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2c3e50;
+            --accent-color: #e74c3c;
+            --light-color: #ecf0f1;
+            --dark-color: #34495e;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid white;
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .tagline {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        .social-links a {
+            color: white;
+            font-size: 1.5rem;
+            transition: transform 0.3s;
+        }
+        
+        .social-links a:hover {
+            transform: translateY(-3px);
+        }
+        
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 30px;
+        }
+        
+        .sidebar {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .section-title {
+            color: var(--secondary-color);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--light-color);
+        }
+        
+        .skills-list {
+            list-style: none;
+        }
+        
+        .skills-list li {
+            margin-bottom: 15px;
+        }
+        
+        .skill-name {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+        
+        .skill-bar {
+            height: 10px;
+            background: var(--light-color);
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        
+        .skill-level {
+            height: 100%;
+            background: var(--primary-color);
+            border-radius: 5px;
+        }
+        
+        .content {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .experience-item, .education-item {
+            margin-bottom: 25px;
+        }
+        
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        
+        .item-title {
+            font-size: 1.2rem;
+            color: var(--secondary-color);
+            font-weight: 600;
+        }
+        
+        .item-date {
+            color: var(--primary-color);
+            font-weight: 500;
+        }
+        
+        .item-subtitle {
+            color: var(--accent-color);
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+        
+        .item-description {
+            color: #666;
+        }
+        
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .project-card {
+            background: var(--light-color);
+            padding: 20px;
+            border-radius: 8px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .project-title {
+            color: var(--secondary-color);
+            margin-bottom: 10px;
+        }
+        
+        .project-links {
+            margin-top: 15px;
+        }
+        
+        .project-links a {
+            color: var(--primary-color);
+            text-decoration: none;
+            margin-right: 15px;
+            font-weight: 500;
+        }
+        
+        .project-links a:hover {
+            text-decoration: underline;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            color: #666;
+        }
+        
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="7.11.23 .jpg" alt="Profile Photo" class="profile-img">
+            <h1>HASKOUK SOUFIAN</h1>
+            <p class="tagline">Software Engineering Student | Full-Stack Developer</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+        </header>
+        
+        <div class="main-content">
+            <aside class="sidebar">
+                <section>
+                    <h2 class="section-title">About Me</h2>
+                    <p>Passionate software engineering student at FSTE with hands-on experience in web and mobile development. Enthusiastic about solving complex problems with elegant code.</p>
+                </section>
+                
+                <section>
+                    <h2 class="section-title">Skills</h2>
+                    <ul class="skills-list">
+                        <li>
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 30%;"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 20%;"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="skill-name">Java</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 40%;"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="skill-name">CSS</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 80%;"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="skill-name">GIT</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 20%;"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="skill-name">Database (SQL/NoSQL)</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 30%;"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+                
+                <section>
+                    <h2 class="section-title">Languages</h2>
+                    <ul class="skills-list">
+                        <li>Tamazight (Fluent)</li>
+                        <li>Arabic (Native)</li>
+                        <li>French (Fluent)</li>
+                        <li>English (Fluent)</li>
+
+                    </ul>
+                </section>
+            </aside>
+            
+            <main class="content">
+                <section>
+                    <h2 class="section-title">Experience :"just sloguiya"</h2>
+                    <div class="experience-item">
+                        <div class="item-header">
+                            <h3 class="item-title">Full-Stack Developer Intern</h3>
+                            <span class="item-date">Summer 2023</span>
+                        </div>
+                        <h4 class="item-subtitle">GBG,erachidia</h4>
+                        <p class="item-description">
+                            Developed and maintained web applications using React.js and Node.js. Collaborated with senior developers to implement new features and fix bugs. Participated in agile development process.
+                        </p>
+                    </div>
+                    
+                    <div class="experience-item">
+                        <div class="item-header">
+                            <h3 class="item-title">Freelance Web Developer</h3>
+                            <span class="item-date">2022 - Present</span>
+                        </div>
+                        <h4 class="item-subtitle">Self-Employed</h4>
+                        <p class="item-description">
+                            Built responsive websites for small businesses and startups. Worked with clients to understand requirements and deliver customized solutions. Technologies used: HTML5, CSS3, JavaScript, WordPress.
+                        </p>
+                    </div>
+                </section>
+                
+                <section>
+                    <h2 class="section-title">Education</h2>
+                    <div class="education-item">
+                        <div class="item-header">
+                            <h3 class="item-title">bac</h3>
+                            <span class="item-date">2021 </span>
+                        </div>
+                        <h4 class="item-subtitle">lycee aoulouz</h4>
+                        <p class="item-description">
+                            bac pysique
+                        </p>
+                    </div>
+                    <div class="education-item">
+                        <div class="item-header">
+                            <h3 class="item-title">deust</h3>
+                            <span class="item-date">2024 </span>
+                        </div>
+                        <h4 class="item-subtitle">FSTE </h4>
+                        <p class="item-description">
+                            MIP
+                        </p>
+                    </div>
+                    <div class="education-iitem">
+                        <div class="item-header">
+                            <h3 class="item-title">Licence</h3>
+                            <span class="item-date">2025 </span>
+                        </div>
+                        <h4 class="item-subtitle">FSTE</h4>
+                        <p class="item-description">
+                            LICENCE en genie logiciel "insha allah"
+                        </p>
+                    </div>
+                </section>
+                
+                <section>
+                    <h2 class="section-title">Projects</h2>
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <h3 class="project-title">University projet : build a site </h3>
+                            <p>siteweb "convoiturage"</p>
+                            <div class="project-links">
+                                <a href="#">View Code</a>
+                                <a href="#">Live Demo</a>
+                            </div>
+                        </div>
+                        
+                        
+                       
+                    </div>
+                </section>
+            </main>
+        </div>
+        
+        <footer>
+            <p>&copy; 2025 Your Name. All rights reserved.</p>
+        </footer>
+    </div>
+    
+    <!-- Font Awesome for icons (you would need to include this in a real project) -->
+    <script src="https://kit.fontawesome.com/your-code.js" crossorigin="anonymous"></script>
+</body>
+</html>

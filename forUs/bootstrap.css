@@ -1,0 +1,133 @@
+.fjj
+{margin-left var(--sidebar-width);
+    padding: 20px;
+    font-weight:bold;}
+
+
+
+    .logo-container {
+        text-align: center;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        width: 100%;
+        max-width: 300px;
+    }
+
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        background-color:#152329 ;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+    
+    .login-container {
+        background: rgba(255, 255, 255, 0.95);
+        border-radius: 10px;
+        width: 100%;
+        max-width: 300px;
+        padding: 40px;
+        text-align: center;
+    }
+
+
+
+
+
+
+
+
+    
+    .logo-container img {
+        margin-bottom: 15px;
+        height: 40px;
+    }
+    
+    h1 {
+        color: var(--primary);
+        font-size: 18px;
+        margin-bottom: 15px;
+        font-weight: 600;
+    }
+    
+    .form-group {
+        margin-bottom: 20px;
+        text-align: left;
+    }
+    
+    label {
+        display: block;
+        margin-bottom: 8px;
+        color: var(--primary);
+        font-weight: 600;
+        font-size: 14px;
+    }
+    
+    input[type="email"],
+    input[type="password"] {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+        transition: all 0.3s;
+    }
+    
+    input:focus {
+        border-color: var(--primary);
+        outline: none;
+        box-shadow: 0 0 0 2px rgba(21, 35, 33, 0.1);
+    }
+    
+    .btn-login {
+        background: var(--primary);
+        color: var(--white);
+        border: none;
+        padding: 8px;
+        width: 100%;
+        border-radius: 5px;
+        font-size: 14px;
+        font-weight: 500;
+        cursor: pointer;
+        margin-top: 10px;
+        transition: all 0.3s;
+    }
+    
+    .btn-login:hover {
+        background: #0a1615;
+    }
+    
+    .links {
+        margin-top: 20px;
+        font-size: 14px;
+    }
+    
+    .links a {
+        color: var(--primary);
+        text-decoration: none;
+        transition: all 0.3s;
+    }
+    
+    .links a:hover {
+        color: var(--accent);
+        text-decoration: underline;
+    }
+    
+    .error {
+        color: red;
+        font-size: 12px;
+        margin-top: -8px;
+    }
+    
+    .success {
+        color: #27ae60;
+        background: rgba(39, 174, 96, 0.1);
+        padding: 8px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        font-size: 12px;
+    }

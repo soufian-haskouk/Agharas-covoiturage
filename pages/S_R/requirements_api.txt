@@ -1,0 +1,6 @@
+flask>=2.0.0
+pandas>=1.5.0
+scikit-learn>=1.2.0
+numpy>=1.21.0
+mysql-connector-python>=8.0.0
+SQLAlchemy>=1.4.0
