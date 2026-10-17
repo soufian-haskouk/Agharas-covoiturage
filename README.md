@@ -1,3 +1,9 @@
+![Status](https://img.shields.io/badge/Status-Completed-success)
+![Version](https://img.shields.io/badge/Release-v1.0.0-blue)
+![License](https://img.shields.io/badge/License-All_Rights_Reserved-red)
+![PHP](https://img.shields.io/badge/PHP-8.2-777BB4?logo=php&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-Database-4479A1?logo=mysql&logoColor=white)
 # 🚗 AGHARAS — Plateforme Web de Covoiturage avec Système de Recommandation basé sur l'IA
 
 **AGHARAS** est une plateforme web dynamique de covoiturage conçue et développée par SOUFIAN-haskouk.
