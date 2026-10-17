@@ -71,6 +71,7 @@ Le projet repose sur une architecture web dynamique répartie comme suit :
 ```text
 AGHARAS/
 │
+├── docs/                            #  diagrammes UML et rapports
 ├── admin/                           # Interface d'administration
 │   └── includes/
 │       ├── admin_login.php
