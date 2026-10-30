@@ -9,6 +9,14 @@
 .env.local
 config.php
 
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Config locale
+config.local.php
+
 # Ignore logs & databases exports if personal
 *.log
 *.sql
